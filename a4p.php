@@ -12,7 +12,7 @@
 <body>
 
     <div class="flex-container">
-        <h1 class="font-formatted-1" style="font-size: 2rem;color: var(--blue)">OPERATION'S OUTPUT</h1>
+        <h1 class="font-formatted-1" style="font-size: 2rem;color: var(--red)">OPERATION'S OUTPUT</h1>
     </div>
 
     <div class="output flex-container ">
@@ -20,69 +20,69 @@
             <?php
             if (isset($_POST['submit'])) {
                 if ($_POST['md5']) {
-                    echo "<div>MD5 hash: ", md5($_POST['md5']), "</div>\n";
+                    echo "<div>MD5: ", md5($_POST['md5']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA for MD5<div>\n";
+                    echo "<div>Enter string:<div>\n";
                 }
 
                 if ($_POST['number-format']) {
                 } else {
-                    echo "<div>ENTER DATA</div>\n";
+                    echo "<div>Enter string:</div>\n";
                 }
 
                 if ($_POST['ord']) {
-                    echo "<div>ASCII of the first character is: ", ord($_POST['ord']), "</div>\n";
+                    echo "<div>ASCII code of the first character: ", ord($_POST['ord']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA for ASCII code</div>\n";
+                    echo "<div>Enter data for ASCII code:</div>\n";
                 }
 
                 if ($_POST['rtrim']) {
-                    echo "<div>STRING AFTER Right-trim: ", rtrim($_POST['rtrim']), "</div>\n";
+                    echo "<div>Right-trim Output: ", rtrim($_POST['rtrim']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA\n for trimming to right</div>\n";
+                    echo "<div>Enter string\n for trimming to right operation</div>\n";
                 }
 
                 if ($_POST['strreplace']) {
                 } else {
-                    echo "<div>ENTER DATA</div>\n";
+                    echo "<div>Enter string:</div>\n";
                 }
 
                 if ($_POST['strlen']) {
-                    echo "<div>STRING LENGTH IS: ", strlen($_POST['strlen']), "</div>\n";
+                    echo "<div>String length: ", strlen($_POST['strlen']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA for calculating String length</div>\n";
+                    echo "<div>Enter string to find its length:</div>\n";
                 }
 
                 if ($_POST['strcasecmp']) {
                 } else {
-                    echo "<div>ENTER DATA</div>\n";
+                    echo "<div>Enter string</div>\n";
                 }
                 if ($_POST['strrpos']) {
                 } else {
-                    echo "<div>ENTER DATA</div>\n";
+                    echo "<div>Enter string</div>\n";
                 }
 
                 if ($_POST['substr']) {
                 } else {
-                    echo "<div>ENTER DATA</div>";
+                    echo "<div>Enter string</div>";
                 }
 
                 if ($_POST['strtolower']) {
                     echo "<div>ENTERED STRING IN LOWER CASE: ", strtolower($_POST['strtolower']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA for converting string to lower case.\n</div>";
+                    echo "<div>Enter string:\n</div>";
                 }
 
                 if ($_POST['bintohex']) {
-                    echo "<div>ENTERED STRING'S hexadecimal value: ", bin2hex($_POST['bintohex']), "</div>\n";
+                    echo "<div>Hexadecimal value: ", bin2hex($_POST['bintohex']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA for converting to hexadecimal</div>\n";
+                    echo "<div>Enter string:</div>\n";
                 }
 
                 if ($_POST['chop']) {
-                    echo "<div>ENTERED STRING AFTER USING CHOP FUNCTION: ", chop($_POST['chop']), "</div>\n";
+                    echo "<div>Result of chopping: ", chop($_POST['chop']), "</div>\n";
                 } else {
-                    echo "<div>ENTER DATA for chopping</div>\n";
+                    echo "<div>Enter string:</div>\n";
                 }
             }
             ?>
